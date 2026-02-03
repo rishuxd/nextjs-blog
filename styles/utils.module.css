@@ -1,56 +1,513 @@
-.heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+/* Stats Section */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 8rem;
 }
 
-.headingXl {
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
+@media (min-width: 768px) {
+    .statsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin: 1rem 0;
+.statItem {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: #f9fafb;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
+[data-theme="dark"] .statItem {
+    background: rgba(24, 24, 27, 0.5);
+    border-color: #27272a;
 }
 
-.borderCircle {
-  border-radius: 9999px;
+.statItem:hover {
+    border-color: #e5e7eb;
 }
 
-.colorInherit {
-  color: inherit;
+[data-theme="dark"] .statItem:hover {
+    border-color: rgba(190, 242, 100, 0.5);
 }
 
-.removeListStyle {
-  list-style: none;
+.statValue {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
 }
 
-.padding1px {
-  padding-top: 1px;
+[data-theme="dark"] .statValue {
+    color: #ffffff;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.statItem:hover .statValue {
+    color: #000000;
 }
 
-.listItem {
-  margin: 0 0 1.25rem;
+[data-theme="dark"] .statItem:hover .statValue {
+    color: var(--primary);
 }
 
-.lightText {
-  color: #666;
+@media (min-width: 768px) {
+    .statValue {
+        font-size: 3rem;
+    }
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b7280;
+}
+
+[data-theme="dark"] .statLabel {
+    color: #6b7280;
+}
+
+/* Experience Section */
+.expGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.expCard {
+    /* Group class for hover effects */
+}
+
+.expHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .expHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.expRole {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .expRole {
+    color: #ffffff;
+}
+
+.expCard:hover .expRole {
+    color: #4f46e5;
+}
+
+[data-theme="dark"] .expCard:hover .expRole {
+    color: var(--primary);
+}
+
+.expPeriod {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+[data-theme="dark"] .expPeriod {
+    color: #6b7280;
+}
+
+.expCompany {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .expCompany {
+    color: #9ca3af;
+}
+
+.expProject {
+    margin-bottom: 2rem;
+}
+
+.expProject:last-child {
+    margin-bottom: 0;
+}
+
+.expProjectName {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.75rem;
+}
+
+[data-theme="dark"] .expProjectName {
+    color: #e4e4e7;
+}
+
+.expList {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.625;
+    max-width: 48rem;
+}
+
+[data-theme="dark"] .expList {
+    color: #9ca3af;
+}
+
+.expList li {
+    margin-bottom: 0.5rem;
+}
+
+/* Experience list markers */
+.expList::marker {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .expList::marker {
+    color: var(--primary);
+}
+
+.expTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+[data-theme="dark"] .tag {
+    background: #27272a;
+    color: var(--primary);
+}
+
+/* Projects Section */
+.projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projectCard {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background: #f9fafb;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .projectCard {
+        padding: 2rem;
+    }
+}
+
+[data-theme="dark"] .projectCard {
+    background: rgba(24, 24, 27, 0.5);
+    border-color: #27272a;
+}
+
+.projectCard:hover {
+    border-color: #e5e7eb;
+}
+
+[data-theme="dark"] .projectCard:hover {
+    border-color: rgba(190, 242, 100, 0.3);
+}
+
+.projectIconBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    opacity: 0.5;
+}
+
+[data-theme="dark"] .projectIconBg {
+    opacity: 0.2;
+}
+
+.projectContent {
+    position: relative;
+    z-index: 10;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .projectTitle {
+    color: #ffffff;
+}
+
+.projectCard:hover .projectTitle {
+    color: #4f46e5;
+}
+
+[data-theme="dark"] .projectCard:hover .projectTitle {
+    color: var(--primary);
+}
+
+.projectLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.projectLinks a {
+    color: #6b7280;
+    transition: color 0.2s ease;
+}
+
+.projectLinks a:hover {
+    color: #000000;
+}
+
+[data-theme="dark"] .projectLinks a {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .projectLinks a:hover {
+    color: var(--primary);
+}
+
+.projectDesc {
+    color: #4b5563;
+    line-height: 1.625;
+    margin: 0 0 1rem;
+    max-width: 42rem;
+}
+
+[data-theme="dark"] .projectDesc {
+    color: #9ca3af;
+}
+
+.projectList {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+    line-height: 1.625;
+    max-width: 42rem;
+}
+
+[data-theme="dark"] .projectList {
+    color: #9ca3af;
+}
+
+.projectList li {
+    margin-bottom: 0.5rem;
+}
+
+/* Project tags (different from experience tags - they have borders) */
+.projectTag {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+[data-theme="dark"] .projectTag {
+    background: #27272a;
+    border-color: #3f3f46;
+    color: var(--primary);
+}
+
+/* Skills (Compact List) */
+.skillsList {
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+
+[data-theme="dark"] .skillsList {
+    border-top-color: #27272a;
+}
+
+.skillRow {
+    margin-bottom: 0.5rem;
+}
+
+.skillsLabel {
+    font-weight: 700;
+    color: #111827;
+    margin-right: 0.5rem;
+}
+
+[data-theme="dark"] .skillsLabel {
+    color: #ffffff;
+}
+
+.skillsText {
+    color: #4b5563;
+}
+
+[data-theme="dark"] .skillsText {
+    color: #9ca3af;
+}
+
+/* Blog List */
+.blogGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.blogItem {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.blogItem:hover {
+    padding-left: 0.5rem;
+}
+
+.blogTitle {
+    font-weight: 500;
+    color: var(--text-heading);
+}
+
+.blogDate {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Education Section */
+.eduGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.eduCard {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: #f9fafb;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .eduCard {
+    background: rgba(24, 24, 27, 0.5);
+    border-color: #27272a;
+}
+
+.eduCard:hover {
+    border-color: #e5e7eb;
+}
+
+[data-theme="dark"] .eduCard:hover {
+    border-color: rgba(190, 242, 100, 0.3);
+}
+
+.eduHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .eduHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.eduInstitution {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .eduInstitution {
+    color: #ffffff;
+}
+
+.eduCard:hover .eduInstitution {
+    color: #4f46e5;
+}
+
+[data-theme="dark"] .eduCard:hover .eduInstitution {
+    color: var(--primary);
+}
+
+.eduPeriod {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+[data-theme="dark"] .eduPeriod {
+    color: #6b7280;
+}
+
+.eduDegree {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+}
+
+[data-theme="dark"] .eduDegree {
+    color: #9ca3af;
+}
+
+.eduScore {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #059669;
+}
+
+[data-theme="dark"] .eduScore {
+    color: var(--primary);
 }

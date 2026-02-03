@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jyotiswaroop Srivastava - Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#bef264", // Lime 400 - The accent color
+                        "sidebar-light": "#d4e645", // Custom yellow-lime from screenshot
+                        "sidebar-dark": "#18181b", // Zinc 900 for dark mode sidebar
+                        "background-light": "#ffffff",
+                        "background-dark": "#09090b", // Zinc 950 for main dark bg
+                        "text-main-light": "#1f2937",
+                        "text-main-dark": "#a1a1aa", // Zinc 400
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #3f3f46;
+        }
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background: #bef264;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark transition-colors duration-300 min-h-screen">
+<div class="flex flex-col lg:flex-row min-h-screen">
+<aside class="w-full lg:w-[25%] xl:w-[22%] bg-sidebar-light dark:bg-sidebar-dark text-gray-900 dark:text-primary p-8 lg:fixed lg:h-screen lg:overflow-y-auto flex flex-col justify-between transition-colors duration-300 border-b lg:border-b-0 lg:border-r border-gray-200 dark:border-zinc-800 z-20">
+<div>
+<div class="mb-6">
+<img alt="Jyotiswaroop Srivastava portrait" class="w-24 h-24 rounded-full object-cover border-4 border-white/30 dark:border-primary/20 shadow-lg grayscale-0 dark:grayscale transition-all duration-500 hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxw_gK67tKshvt78y47XMHdBSIgk-S9fm3cECu22IGHxlXxTBu3RuaxV44Jef7SrwIy0mxtmXNUbNZLjU3jNajjgKNNMb41_ZdMpI8clZo-bmH97ATqcbAK0SZxeKkw6lPHYg6A_DmcKe_untqLlIyZRa5tBtt7s_fhbmjTUBZxlzC2QoY-SFv3cx5C_jLyjaX4sdPgwaL8uI9wvM1lgGTjxLAWz6DRKp7eaBvMfmCpG5qKTjDj1K40Hx7JdQZ9oRnxbNuUe9khVrM"/>
+</div>
+<h1 class="text-2xl font-bold font-sans tracking-tight mb-1 dark:text-white">
+                    Jyotiswaroop Srivastava
+                </h1>
+<p class="text-sm font-mono opacity-80 mb-1">Software Developer</p>
+<p class="text-xs font-mono opacity-60 uppercase tracking-widest mb-8">New Delhi, India</p>
+<div class="w-16 h-0.5 bg-gray-900 dark:bg-primary mb-8"></div>
+<nav class="mb-12">
+<h3 class="text-xs font-bold uppercase tracking-widest mb-4 opacity-50 dark:text-white">Recent Posts</h3>
+<ul class="space-y-4 text-sm font-medium">
+<li>
+<a class="block group" href="#">
+<span class="group-hover:translate-x-1 transition-transform inline-block">When to Use Static Generation v.s. Server-side Rendering</span>
+</a>
+</li>
+<li>
+<a class="block group" href="#">
+<span class="group-hover:translate-x-1 transition-transform inline-block">Two Forms of Pre-rendering</span>
+</a>
+</li>
+<li class="dark:opacity-50 opacity-40">
+<span class="block">Understanding Hydration (Coming Soon)</span>
+</li>
+</ul>
+</nav>
+</div>
+<div>
+<div class="flex gap-4 mb-8 text-sm font-mono">
+<a class="hover:underline opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="hover:underline opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="hover:underline opacity-80 hover:opacity-100" href="#">Twitter</a>
+</div>
+<button class="w-full py-3 px-6 rounded bg-gray-900 text-white dark:bg-primary dark:text-gray-900 font-bold text-sm tracking-wide hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 uppercase">
+                    Get in Touch
+                </button>
+</div>
+</aside>
+<main class="w-full lg:w-[75%] xl:w-[78%] lg:ml-auto p-8 lg:p-16 xl:p-24 relative">
+<header class="flex justify-between items-center mb-24">
+<div class="text-lg font-bold tracking-tighter dark:text-white">jyotiswaroop.</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-400">
+<a class="hover:text-black dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="hover:text-black dark:hover:text-primary transition-colors" href="#">Experience</a>
+<a class="hover:text-black dark:hover:text-primary transition-colors" href="#">Projects</a>
+<a class="hover:text-black dark:hover:text-primary transition-colors" href="#">Blog</a>
+<button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors border border-gray-200 dark:border-zinc-700" id="theme-toggle">
+<span class="material-symbols-outlined text-lg block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-lg hidden dark:block text-primary">light_mode</span>
+</button>
+</nav>
+<div class="md:hidden flex items-center gap-4">
+<button class="p-2 rounded-full border border-gray-200 dark:border-zinc-700" id="theme-toggle-mobile">
+<span class="material-symbols-outlined text-lg block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-lg hidden dark:block text-primary">light_mode</span>
+</button>
+<button class="material-symbols-outlined">menu</button>
+</div>
+</header>
+<section class="mb-24 fade-in-up">
+<div class="flex items-center gap-4 mb-12">
+<span class="font-mono text-xs font-bold tracking-widest text-gray-400 dark:text-primary">00 ABOUT</span>
+<div class="h-px bg-gray-300 dark:bg-zinc-800 flex-grow"></div>
+</div>
+<div class="max-w-3xl">
+<p class="text-xl lg:text-2xl leading-relaxed font-light mb-8 text-gray-800 dark:text-gray-200">
+                        I'm a software developer specializing in backend engineering with <span class="font-medium text-black dark:text-white">Node.js, NestJS</span>, and microservices architecture. I build scalable systems that handle real-world complexity — from payment integrations and real-time updates to containerized deployments in air-gapped environments.
+                    </p>
+<div class="pt-8 border-t border-gray-200 dark:border-zinc-800">
+<p class="font-mono text-sm leading-loose">
+<span class="font-bold text-gray-900 dark:text-white mr-2">Top Skills:</span>
+<span class="text-gray-600 dark:text-gray-400">Node.js · NestJS · TypeScript · PostgreSQL · MongoDB · Redis · Docker · Kafka · gRPC</span>
+</p>
+</div>
+</div>
+</section>
+<section class="mb-32 grid grid-cols-2 md:grid-cols-4 gap-8 fade-in-up delay-100">
+<div class="p-6 rounded-lg bg-gray-50 dark:bg-zinc-900/50 border border-transparent dark:border-zinc-800 hover:border-gray-200 dark:hover:border-primary/50 transition-all duration-300 group">
+<div class="text-4xl md:text-5xl font-bold font-mono mb-2 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-primary transition-colors">53</div>
+<div class="text-xs font-bold tracking-widest uppercase text-gray-500 dark:text-gray-500">Repos</div>
+</div>
+<div class="p-6 rounded-lg bg-gray-50 dark:bg-zinc-900/50 border border-transparent dark:border-zinc-800 hover:border-gray-200 dark:hover:border-primary/50 transition-all duration-300 group">
+<div class="text-4xl md:text-5xl font-bold font-mono mb-2 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-primary transition-colors">4+</div>
+<div class="text-xs font-bold tracking-widest uppercase text-gray-500 dark:text-gray-500">Stars</div>
+</div>
+<div class="p-6 rounded-lg bg-gray-50 dark:bg-zinc-900/50 border border-transparent dark:border-zinc-800 hover:border-gray-200 dark:hover:border-primary/50 transition-all duration-300 group">
+<div class="text-4xl md:text-5xl font-bold font-mono mb-2 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-primary transition-colors">17</div>
+<div class="text-xs font-bold tracking-widest uppercase text-gray-500 dark:text-gray-500">LeetCode</div>
+</div>
+<div class="p-6 rounded-lg bg-gray-50 dark:bg-zinc-900/50 border border-transparent dark:border-zinc-800 hover:border-gray-200 dark:hover:border-primary/50 transition-all duration-300 group">
+<div class="text-4xl md:text-5xl font-bold font-mono mb-2 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-primary transition-colors">1+</div>
+<div class="text-xs font-bold tracking-widest uppercase text-gray-500 dark:text-gray-500">Years</div>
+</div>
+</section>
+<section class="fade-in-up delay-200 mb-24">
+<div class="flex items-center gap-4 mb-12">
+<span class="font-mono text-xs font-bold tracking-widest text-gray-400 dark:text-primary">01 EXPERIENCE</span>
+<div class="h-px bg-gray-300 dark:bg-zinc-800 flex-grow"></div>
+</div>
+<div class="space-y-12">
+<div class="group">
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-primary transition-colors">Software Developer</h3>
+<span class="font-mono text-xs text-gray-500 dark:text-gray-500">2024 — Present</span>
+</div>
+<div class="text-md font-medium text-gray-600 dark:text-gray-400 mb-4">YARS Enterprises Private Limited</div>
+<ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl marker:text-gray-400 dark:marker:text-primary">
+<li>Built CSC Compass Admin Web Portal with NestJS, optimizing role-based access control and system management.</li>
+<li>Optimized database queries by 40% through advanced indexing and query restructuring, significantly reducing load times.</li>
+<li>Architected a centralized logging pipeline using Grafana and Loki to improve system observability and debugging efficiency.</li>
+</ul>
+<div class="flex gap-2 mt-4 flex-wrap">
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-primary">NestJS</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-primary">Grafana</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-primary">Loki</span>
+</div>
+</div>
+</div>
+</section>
+<section class="fade-in-up delay-300">
+<div class="flex items-center gap-4 mb-12">
+<span class="font-mono text-xs font-bold tracking-widest text-gray-400 dark:text-primary">02 PROJECTS</span>
+<div class="h-px bg-gray-300 dark:bg-zinc-800 flex-grow"></div>
+</div>
+<div class="space-y-12">
+<div class="group relative overflow-hidden rounded-xl bg-gray-50 dark:bg-zinc-900/50 p-6 md:p-8 border border-transparent dark:border-zinc-800 hover:border-gray-200 dark:hover:border-primary/30 transition-all duration-300">
+<div class="absolute top-0 right-0 p-4 opacity-50 dark:opacity-20">
+<span class="material-symbols-outlined text-6xl">code</span>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-primary transition-colors">RemoteOffice</h3>
+<div class="flex gap-4">
+<a class="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">link</span>
+</a>
+<a class="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-primary transition-colors" href="#">
+<span class="font-mono text-xs">GH</span>
+</a>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 max-w-2xl">
+                                An innovative virtual office platform enabling real-time collaboration. Features interactive whiteboard capabilities, seamless video conferencing, and live presence indicators for distributed teams.
+                            </p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-primary">Canvas</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-primary">Next.js</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-primary">Node.js</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-primary">Websockets</span>
+<span class="px-3 py-1 text-xs font-mono rounded-full bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-primary">WebRTC</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-32 pt-8 border-t border-gray-100 dark:border-zinc-900 flex justify-between items-center text-xs text-gray-400 font-mono">
+<span>© 2024 Jyotiswaroop.</span>
+<span class="hidden md:inline">Designed &amp; Built in New Delhi</span>
+</div>
+</main>
+</div>
+<script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const toggleBtnMobile = document.getElementById('theme-toggle-mobile');
+        const html = document.documentElement;
+        function toggleTheme() {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+        // Initialize based on preference or default to dark (since prompt emphasizes dark mode theme)
+        // However, system instruction is usually to respect user preference.
+        // Let's default to Light to match the initial screenshot, but allow toggle to the V3 Design (Dark).
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            // Uncomment next line to force V3 Dark Mode as default if desired, otherwise defaults to screenshot style (light)
+            html.classList.add('dark'); 
+        }
+        toggleBtn.addEventListener('click', toggleTheme);
+        if(toggleBtnMobile) toggleBtnMobile.addEventListener('click', toggleTheme);
+    </script>
+</body></html>
