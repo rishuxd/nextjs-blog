@@ -56,8 +56,8 @@ const projects = [
       "Implemented multiplayer relative movement using a WebSocket server for seamless real-time interactions.",
       "Integrated proximity-based video/audio conferencing via WebRTC, enabling high-quality, peer-to-peer conferencing within the platform.",
     ],
-    link: "#",
-    github: "#",
+    link: "https://spaces.rishuffled.in",
+    github: "https://github.com/rishuxd/metaverse.git",
     tags: ["Canvas", "Next.js", "Node.js", "Websockets", "WebRTC"],
   },
 ];
@@ -222,14 +222,6 @@ export default function Home({ allPostsData, githubStats, leetcodeStats }) {
         <div className={utilStyles.projectsGrid}>
           {projects.map((project, i) => (
             <div key={i} className={utilStyles.projectCard}>
-              <div className={utilStyles.projectIconBg}>
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "3.75rem" }}
-                >
-                  {project.icon}
-                </span>
-              </div>
               <div className={utilStyles.projectContent}>
                 <div className={utilStyles.projectHeader}>
                   <h3 className={utilStyles.projectTitle}>{project.name}</h3>
