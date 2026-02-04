@@ -103,16 +103,7 @@ export default function Home({ allPostsData, githubStats, leetcodeStats }) {
       <section id="about" className={utilStyles.fadeInUp}>
         <SectionHeader number="00" title="ABOUT" />
         <div style={{ maxWidth: "48rem" }}>
-          <p
-            style={{
-              fontSize: "1.25rem",
-              lineHeight: "1.625",
-              fontWeight: "300",
-              marginBottom: "2rem",
-              color: "var(--text-main)",
-            }}
-            className={utilStyles.aboutText}
-          >
+          <p className={utilStyles.aboutText}>
             I'm a software developer specializing in backend engineering with{" "}
             <span style={{ fontWeight: "500", color: "var(--text-heading)" }}>
               Node.js, NestJS
